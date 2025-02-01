@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ismail Abdulazeez</title>
+  </head>
+  <body>
+
+      <div class="profile-card">
+        <img
+          src="image/KOLORO_1637571787070.jpg"
+          alt="Profile Picture"
+          data-testid="profilePicture"
+        />
+        <h2 data-testid="fullName">Ismail Abdulazeez</h2>
+        <h3 data-testid="jobTitle">Front-End Developer</h3>
+        <p data-testid="shortBio">
+          Passionate front-end developer with a knack for creating elegant,
+          user-friendly web applications. Dedicated to continuous learning and
+          mastering modern web technologies.
+        </p>
+        <p data-testid="currentLocation">Niger State, Nigeria.</p>
+        <p data-testid="emailAddress">Ismailabdulazeez100@gmail.com</p>
+        <div class="social-links" data-testid="socialLinks">
+          <a href="#">LinkedIn</a>
+          <a href="https://github.com/azeezdacoder">GitHub</a>
+          <a href="#">Twitter</a>
+        </div>
+        <p id="utcTime" data-testid="currentTimeUTC"></p>
+      </div>
+
+      <script>
+        function updateTime() {
+          document.getElementById(
+            "utcTime"
+          ).innerText = `UTC Time: ${new Date().toLocaleTimeString()}`;
+        }
+        updateTime();
+      </script>
+    </div>
+  </body>
+</html>
